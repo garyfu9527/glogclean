@@ -4,6 +4,7 @@ import (
 	"flag"
 	"github.com/golang/glog"
 	"testing"
+	"time"
 )
 
 func TestGlogClean(t *testing.T)  {
@@ -15,6 +16,6 @@ func TestGlogClean(t *testing.T)  {
 	defer StopTask()
 
 	for  {
-		glog.Info("glog clean test")
+		glog.Info("glog clean test %d", time.Now().Unix())
 	}
 }
