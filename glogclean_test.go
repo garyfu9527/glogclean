@@ -18,4 +18,6 @@ func TestGlogClean(t *testing.T)  {
 	for  {
 		glog.Info("glog clean test %d", time.Now().Unix())
 	}
+
+	glog.Infof("test")
 }
