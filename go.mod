@@ -1,4 +1,4 @@
-module gitee.com/garyfu/glogclean
+module github.com/garyfu9527/glogclean
 
 go 1.14
 
