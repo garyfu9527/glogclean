@@ -47,6 +47,10 @@ func RunCleanLogTask() chan bool {
 			LognamePatter: exeName + "*.WARNING.*",
 			MaxFiles: 2,
 		},
+		{
+			LognamePatter: exeName + "*.FATAL.*",
+			MaxFiles: 5,
+		},
 	}
 
 	return startCleanTask(logDir, rules, time.Minute)

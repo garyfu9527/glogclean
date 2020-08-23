@@ -16,7 +16,7 @@ func TestGlogClean(t *testing.T)  {
 	defer StopTask()
 
 	for  {
-		glog.Info("glog clean test %d", time.Now().Unix())
+		glog.Infof("glog clean test %d", time.Now().Unix())
 		time.Sleep(time.Microsecond)
 	}
 }
